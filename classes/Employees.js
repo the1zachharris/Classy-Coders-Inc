@@ -7,6 +7,7 @@ class Employees {
         this.title = title
         this.#salary = salary
         this.#isHired = true
+        Employees.#allEmployees.push(this)
     }
     getSalary() {
         return this.#salary

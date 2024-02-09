@@ -7,7 +7,11 @@ class SalesPerson extends Employees {
         this.clients = clients
         this.#totalSales = 0
     }
-    getSalesNumbers
-}
+    getSalesNumber() {
+        return this.#totalSales
+    }
+    makeSale(ammount) {
+        this.#totalSales += ammount
+    }}
 
 module.exports = SalesPerson
